@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+.card 
+{
+    width: 320px;
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #310756;
+    position: relative;
+    right: 38%;
+    border-radius: 10px;
+
+}
+.logo
+{
+    width:240px;
+    position: relative;
+    top: 20px;
+}
+
+h3
+{
+    color: white;
+    font-family: "Changa", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    position: relative;
+    top: 15px;
+}
+p
+{
+    position: relative;
+    right: 16%;
+    color: white;
+    font-family: "Changa", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #7f25ce;
+    width: 220px;
+    height: 37px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.clogo
+{
+    width: 220px;
+    height: 55px;
+    position: relative;
+    
+}
+
+.cbutton
+{
+    position: absolute;
+    left:40% ;
+    top: 600px;
+    background-color: #E29B40;
+    border-radius: 30px;
+    border: none;
+    width: 300px;
+    height: 60px;
+    font-family: "Kanit", sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+    font-style: bolder;
+    text-align: center;
+    color: white;
+    -webkit-box-shadow: 27px 3px 32px -8px rgba(66,63,66,1);
+    -moz-box-shadow: 27px 3px 32px -8px rgba(66,63,66,1);
+    box-shadow: 27px 3px 32px -8px rgba(66,63,66,1);
+    transition: .3s;
+    cursor: pointer;
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 30%;
+}
+
+.cbutton:hover {
+    animation: pulse 1s infinite;
+    transition: .3s;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.9);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
+
+  .qr
+  {
+    position: relative;
+    right:110px;
+    top: 20px;
+  }

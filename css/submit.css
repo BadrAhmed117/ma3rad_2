@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+body
+{
+  text-align: center;
+}
+.id
+{
+  font-family: "Changa";
+  font-weight: 900;
+  font-size: 60px;
+  color: #310756;
+  position: relative;
+  top: -850px;
+}
+  .phone
+{
+    display: none;
+}
+  nav
+  {
+    direction: ltr;
+      position: relative;
+     background-color: #310756;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  nav ul li
+  {
+      position: relative;
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 20px;
+  }
+  
+  nav ul li a
+  {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 30px;
+  
+  }
+  
+  nav ul li a:hover
+  {
+      border-bottom: 2px solid white;
+  }
+  
+  
+  .slogo
+  {
+      width: 100px;
+      height: auto;
+      margin-left: 20px;
+  }
+  
+  .nlogo
+  {
+      width: 100%;
+  }
+  .social
+  {
+      padding-right: 40px;
+      margin-right: 100px;
+  }
+  .snap
+  {
+      width: 25px;
+      margin-right: 10px;
+  }
+  
+  .snap:hover
+  {
+      border-bottom: 2px solid white;
+  }
+  .tik
+  {
+      width: 25px;
+      margin-left: 10px;
+  }
+  .tik:hover
+  {
+      border-bottom: 2px solid white;
+  }
+  .insta
+  {
+      width: 25px;
+  }
+  
+  .insta:hover
+  {
+      border-bottom: 2px solid white;
+  }
+  
+.content
+{
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(25deg, #d1d1d0 40%, transparent 41%, transparent 59%, #d1d1d0 60%)  ,linear-gradient(90deg, transparent 45%, #310756 45%, #310756 55%, transparent 55%, transparent 20%, #310756 20%, #310756 30%,transparent 30%) ,linear-gradient(90deg, #310756 9%, transparent 10%);
+    background-size: 3em 3em;
+    background-color: #d1d1d0;
+    opacity: 0.2;
+}
+
+  main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    filter: drop-shadow(11px 3px 22px #000000);
+    position: relative;
+    top: -850px;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input {
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #310756;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #6c1cb1;
+  }
+
+  .bottom_logo
+  {
+    display: none;
+  }
+
+  .terms
+  {
+    display: none;
+  }
+
+  .terms-and-conditions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.terms-and-conditions .terms-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.terms-and-conditions .terms-label input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.terms-and-conditions .terms-label input[type="checkbox"]:checked {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z' fill='%23fff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.terms-and-conditions .terms-link {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.terms-and-conditions .terms-link:hover {
+  text-decoration: underline;
+}
+  @media(max-width: 1210px)
+{
+  
+
+  html,body
+  {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+  }
+  .content
+  {
+    height:2000px;
+  }
+
+  .id
+  {
+    top: -1800px;
+  }
+
+  
+  main
+  {
+    position: relative;
+    top: -1700px;
+    max-width: 90%;
+    height: 550px;
+    border-radius: 20px;
+  } 
+
+  form input {
+    height: 50px;
+    margin-top: 30px;
+  }
+
+  form input[type="submit"] {
+    background-color: #310756;
+    color: #fff;
+    cursor: pointer;
+    font-size:xx-large;
+
+  }
+
+  form label
+  {
+    font-size: x-large;
+  }
+
+
+    .navbar
+    {
+        display: none;
+    }
+    
+    .phone{
+        display: block;
+    }
+    .phone_nav
+    {
+        width: 100%;
+        height: 130px;
+        margin-top: 0;
+        background-color: #380b5f;
+    }
+    nav ul li{
+        display: flex;
+        position: relative;
+        top: 50px;
+        display: block;
+        font-size: xx-large;
+    }
+    .phone_nlogo
+    {
+        margin-left: 10px;
+        width: 100px;
+    }
+    .menu
+    {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        background-color: #310756;
+
+    }
+    .menu.show {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+    .hamburger
+    {
+        cursor: pointer;
+        display: block;
+        margin-right: 10px;
+    }
+
+    .phone_snap{
+      width: 40px;
+    }
+
+    .phone_tik{
+      width: 40px;
+    }
+
+    .phone_insta{
+      width: 40px;
+    }
+    
+    .line
+    {
+        width: 40px;
+        height: 5px;
+        margin: 4px;
+        background-color: white;
+    }
+.bottom
+{
+    background-color: #380b5f;
+    position: relative;
+    top: -1200px;
+    width: 100%;
+    height: 400px;
+}
+    .bottom_logo
+    {
+      display: block;
+      position: relative;
+      margin-top: 90px;
+      top: -1300px;
+      right: 20%;
+      width: 60%;
+    }
+
+    .terms
+    {
+      display: block;
+      position: relative;
+      font-family: "Changa";
+      font-weight: 300;
+      font-size: 40px;
+      margin-top: 40px;
+      color: #fff;
+    }
+
+    .terms-and-conditions .terms-label input[type="checkbox"]
+    {
+      margin-left: 100px;
+      
+    }
+
+    .terms-and-conditions .terms-label
+    {
+      margin-left: 300px;
+      width: 900px;
+      position: relative;
+      top: 20px;
+    }
+}
+@media (max-width:555px)
+{
+    button
+    {
+        color: #310756;
+        width: 200px;
+        right: 25%;
+    }
+    
+    .container
+    {
+        right: 0%;
+    }
+
+
+}

@@ -1,0 +1,123 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+/* Header styles */
+header {
+    background-color: #310756;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #e6e6e6;
+}
+
+/* Main content styles */
+main {
+    padding: 40px;
+}
+
+section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Action buttons */
+.action-buttons {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #A5C85A;
+    width: 110px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #A5C85A;
+}
+
+.btn-primary {
+    background-color: #A5C85A;
+}
+
+.btn-primary:hover {
+    background-color: #4a6808;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}

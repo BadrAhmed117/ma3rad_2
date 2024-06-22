@@ -1,0 +1,52 @@
+<!-- database -->
+<?php
+$conn =new mysqli('localhost','root','','ma3rad');
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fname= $_POST["fname"];
+    $sname= $_POST["sname"];
+    $job= $_POST["job"];
+    $cname= $_POST["cname"];
+    $cactivity = $_POST['cactivity'];
+    $telephone= $_POST["telephone"];
+    $mobile= $_POST["mobile"];
+    $web= $_POST["web"];
+    $city= $_POST["city"];
+    $country= $_POST["country"];
+    $status=$_POST["status"];
+    // إنشاء معرف عشوائي للمستخدم
+
+    $user_id = rand(10000, 99999);
+
+    // قم بإدخال البيانات في قاعدة البيانات
+    $techeck= "SELECT * FROM users Where telephone='$telephone'";
+    $result=mysqli_query($conn,$techeck);
+    $present=mysqli_num_rows($result);
+    if($present>0)
+{
+    echo "<script>alert('The telephone was found')</script>";
+}
+else{
+
+    $sql_1= "SELECT * FROM users Where mobile='$mobile'";
+    $result_1=mysqli_query($conn,$sql_1);
+    $present_1=mysqli_num_rows($result_1);
+
+    if($present_1>0)
+    {
+        echo "<script>alert('The mobile was found')</script>";
+
+    }else{
+        $sql = mysqli_query ($conn ,"Insert into users (id,fname, sname, job, cname, cactivity, telephone, mobile, web, city, country,status)
+        values('$user_id','$fname','$sname','$job','$cname','$cactivity','$telephone','$mobile','$web','$city','$country','$status')");
+
+        // إذا تم إدخال البيانات بنجاح، قم بالتحويل إلى صفحة عرض بطاقة الهوية
+
+        header("Location:card.php?user_id=$user_id");
+        exit;
+}
+}
+}
+
+?>

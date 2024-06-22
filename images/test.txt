@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Ma2rad</title>
+</head>
+<body>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body
+    {
+        background-color: rgb(219, 219, 219);
+        background-size: 100% 800px;
+        background-image: url(images/back.png);
+        background-position: center top;  
+        background-repeat: no-repeat;
+        height: 2000px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        
+    }
+    nav
+    {
+        position: relative;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(55,41,84,0.7960434173669468) 45%, rgba(48,33,82,1) 100%);
+        width: 100%;
+        height: 100px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav ul li
+    {
+        position: relative;
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 20px;
+        right:10%;
+    }
+    
+    nav ul li a
+    {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: larger;
+        margin-right: 30px;
+    
+    }
+    
+    nav ul li a:hover
+    {
+        border-bottom: 2px solid white;
+    }
+    
+    
+    .slogo
+    {
+        width: 100px;
+        height: auto;
+        margin-left: 20px;
+    }
+    
+    .nlogo
+    {
+        width: 100%;
+    }
+    .social
+    {
+        padding-right: 40px;
+        margin-right: 100px;
+    }
+    .snap
+    {
+        width: 25px;
+        margin-right: 10px;
+    }
+    
+    .snap:hover
+    {
+        border-bottom: 2px solid white;
+    }
+    .tik
+    {
+        width: 25px;
+        margin-left: 10px;
+    }
+    .tik:hover
+    {
+        border-bottom: 2px solid white;
+    }
+    .insta
+    {
+        width: 25px;
+    }
+    
+    .insta:hover
+    {
+        border-bottom: 2px solid white;
+    }
+    
+    .logo
+    {
+        position: absolute;
+        width: 500px;
+        left: 10%;
+        top: 33%;
+    }
+    
+    
+    .blogo
+    {
+        width: 100%;
+    }
+    
+    .fp
+    {
+        position: absolute;
+        width: 500px;
+        left: 13%;
+        top: 54%;
+    }
+    
+    .ma3
+    {
+        color: white;
+        font-family: "Changa", sans-serif;
+        font-size: 32px;
+        font-weight: 480;
+        font-style: normal;
+        
+    }
+    .first
+    {
+        position: absolute;
+        color: white;
+        font-family: "Changa", sans-serif;
+        font-size: 32px;
+        font-weight: 480;
+        font-style: normal;
+        left: 20%;
+    
+    }
+    
+    .bracket
+    {
+        position: absolute;
+        width: 200px;
+        top: 220%;
+        left: 20%;
+    }
+    .jouf
+    {
+        position: absolute;
+        width: 200px;
+        top: 195%;
+        left: 30%; 
+        color: white;
+        font-family: "Changa", sans-serif;
+        font-size: 35px;
+        font-weight: 480;
+        font-style: normal;
+    }
+    
+    .fbook
+    {
+        position: absolute;
+        top: 220px;
+        left:20% ;
+        background-color: #E29B40;
+        border-radius: 30px;
+        border: none;
+        width: 193px;
+        height: 40px;
+        font-family: "Kanit", sans-serif;
+        font-size: larger;
+        font-weight: 700;
+        font-style: normal;
+        color: white;
+        transition: .3s;
+        cursor: pointer;
+    }
+    
+    .fbook:hover {
+        animation: pulse 1s infinite;
+        transition: .3s;
+      }
+    
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        70% {
+          transform: scale(.9);
+        }
+          100% {
+          transform: scale(1);
+        }
+      }
+    
+    .slider
+      {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        background-color: #310756;
+        top: 850px;
+        display: flex;
+      }
+    
+    
+    
+      .img1
+      {
+        width: 70%;
+        height: 100%;
+      }
+    
+      .img2
+      {
+        position: relative;
+        width: 70%;
+        height: 100%;
+    
+      }
+      .img3
+      {
+        width: 70%;
+        height: 100%    ;
+      }</style>
+
+<!-- nav bar -->
+<nav>
+    
+
+    <!-- logo -->
+     <div class="slogo" >
+        <img class="nlogo" src="images/slogo.png" alt="">
+     </div>
+
+     <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="book.html">Book now</a></li>
+    </ul>
+
+    <div class="social">
+        <img class="snap" src="images/icons8-snapchat-144.png" alt="">
+        <img class="insta" src="images/icons8-instagram-144.png" alt="">
+        <img class="tik" src="images/icons8-tiktok-144.png" alt="">
+    </div>
+</nav>
+
+<!-- background -->
+  <div class="logo">
+    <img class="blogo" src="images/logo.png" alt="">
+  </div>
+  <div class="fp">
+        <h3 class="ma3">معرض سيتي لاينز للبناء و التشييد</h3>
+        <h3 class="first" >(نسخته الاولى)</h3>
+        <h3 class="jouf">الجوف</h3>
+        <img class="bracket" src="images/bracket.png" alt="">
+        <button class="fbook" onclick="window.location.href='book.html'">Book now</button>
+  </div>
+
+<section class="slider" >
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+  <div class="content swiper-slide" style="width: 80%;height: 450px; margin-left: 300px; position: relative; top: 20px;">
+    <img class="img1" src="images/work.png" alt="">
+  </div>
+  <div class="content swiper-slide" style="width: 80%;height: 450px; margin-left: 300px; position: relative; top: 20px;">
+    <img class="img2" src="images/minecraft.png" alt="">
+  </div>
+  <div class="content swiper-slide" style="width: 80%;height: 450px; margin-left: 300px; position: relative; top: 20px;">
+    <img class="img3" src="images/course.png" alt="">
+  </div>
+</div>
+</div>
+</section>
+<!-- link swiper slider -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop:true,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 150,
+      modifier: 1,
+      slideShadows: true,
+    },
+
+   autoplay:
+   {
+    delay:3000,
+    disableOnInteraction:false,
+   }
+  });
+</script>
+
+
+</body>
+</html>
